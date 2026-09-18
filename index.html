@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>APEX AEGIS | The World's Lightest Lacrosse Helmet</title>
+  <style>
+    :root {
+      --bg-dark: #0a0a0a;
+      --bg-card: #141414;
+      --red-primary: #e60000;
+      --red-hover: #ff1a1a;
+      --text-main: #ffffff;
+      --text-muted: #a0a0a0;
+      --border-color: #262626;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    body {
+      background-color: var(--bg-dark);
+      color: var(--text-main);
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 5%;
+      border-bottom: 1px solid var(--border-color);
+      position: sticky;
+      top: 0;
+      background-color: rgba(10, 10, 10, 0.95);
+      backdrop-filter: blur(8px);
+      z-index: 100;
+    }
+
+    .logo {
+      font-size: 1.5rem;
+      font-weight: 900;
+      letter-spacing: 2px;
+    }
+
+    .logo span {
+      color: var(--red-primary);
+    }
+
+    .nav-links a {
+      color: var(--text-muted);
+      text-decoration: none;
+      margin-left: 2rem;
+      font-size: 0.9rem;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: var(--red-primary);
+    }
+
+    /* Hero Section */
+    .hero {
+      padding: 6rem 5% 4rem;
+      text-align: center;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .badge {
+      display: inline-block;
+      background-color: rgba(230, 0, 0, 0.15);
+      color: var(--red-primary);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      border: 1px solid var(--red-primary);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero h1 {
+      font-size: 3.5rem;
+      font-weight: 900;
+      line-height: 1.1;
+      margin-bottom: 1.5rem;
+      text-transform: uppercase;
+    }
+
+    .hero p {
+      font-size: 1.25rem;
+      color: var(--text-muted);
+      max-width: 700px;
+      margin: 0 auto 2.5rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: var(--red-primary);
+      color: #fff;
+      padding: 1rem 2.5rem;
+      text-decoration: none;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      border-radius: 4px;
+      transition: background 0.2s;
+      border: none;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      background-color: var(--red-hover);
+    }
+
+    /* Features Grid */
+    .features {
+      padding: 5rem 5%;
+      max-width: 1200px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+
+    .feature-card {
+      background-color: var(--bg-card);
+      border: 1px solid var(--border-color);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border-top: 3px solid var(--red-primary);
+    }
+
+    .feature-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+
+    .feature-card p {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Tech Specs Table Section */
+    .specs {
+      padding: 5rem 5%;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .specs h2 {
+      text-align: center;
+      font-size: 2rem;
+      margin-bottom: 3rem;
+      text-transform: uppercase;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: var(--bg-card);
+      border-radius: 8px;
+      overflow: hidden;
+      border: 1px solid var(--border-color);
+    }
+
+    th, td {
+      padding: 1.2rem 1.5rem;
+      text-align: left;
+    }
+
+    th {
+      background-color: #1c1c1c;
+      color: var(--red-primary);
+      text-transform: uppercase;
+      font-size: 0.85rem;
+      letter-spacing: 1px;
+    }
+
+    tr:nth-child(even) {
+      background-color: #0f0f0f;
+    }
+
+    td {
+      border-top: 1px solid var(--border-color);
+      font-size: 0.95rem;
+    }
+
+    /* Footer */
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding: 3rem 5%;
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">APEX <span>AEGIS</span></div>
+    <div class="nav-links">
+      <a href="#features">Technology</a>
+      <a href="#specs">Specs</a>
+      <a href="#contact">Pre-Order</a>
+    </div>
+  </nav>
+
+  <section class="hero">
+    <span class="badge">NOCSAE Certified Protection</span>
+    <h1>Lighter. Cooler. Faster.</h1>
+    <p>Engineered with a Carbon-Fiber shell, 3D-Printed Lattice Liner, and Grade-5 Titanium Cage—delivering full protection under 2.3 lbs.</p>
+    <a href="#contact" class="btn">Reserve Team Package</a>
+  </section>
+
+  <section class="features" id="features">
+    <div class="feature-card">
+      <h3>Carbon-Fiber Shell</h3>
+      <p>Reduces helmet shell mass by up to 30% while offering supreme impact resistance against high-velocity ball strikes.</p>
+    </div>
+    <div class="feature-card">
+      <h3>3D Lattice Liner</h3>
+      <p>Ditches solid foam for an open-cell 3D elastomer lattice that channels 4x more airflow and absorbs rotational energy.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Titanium Cage</h3>
+      <p>Grade-5 titanium alloy offers unmatched strength-to-weight ratios with an extra-wide sightline for total peripheral field vision.</p>
+    </div>
+  </section>
+
+  <section class="specs" id="specs">
+    <h2>Technical Specifications</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Component</th>
+          <th>Material / Tech</th>
+          <th>Primary Benefit</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Outer Shell</strong></td>
+          <td>Carbon-Fiber Composite</td>
+          <td>Ultralight, high structural rigidity</td>
+        </tr>
+        <tr>
+          <td><strong>Inner Liner</strong></td>
+          <td>3D Printed Lattice + Smart Foam</td>
+          <td>Rotational impact damping & 4x ventilation</td>
+        </tr>
+        <tr>
+          <td><strong>Faceguard</strong></td>
+          <td>Grade-5 Titanium Alloy</td>
+          <td>40% lighter cage than standard steel</td>
+        </tr>
+        <tr>
+          <td><strong>Target Weight</strong></td>
+          <td>&lt; 2.3 lbs</td>
+          <td>Zero neck fatigue through 4 quarters</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <footer id="contact">
+    <p>&copy; 2026 APEX AEGIS Innovations Inc. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
